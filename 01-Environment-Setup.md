@@ -12,7 +12,7 @@ Create a Windows Server 2022 virtual machine that will serve as the Domain Contr
 
 ### Screenshot
 
-![VMware Virtual Machine](../images/vmware.png)
+![VMware Virtual Machine](images/vmware.png)
 
 ---
 
@@ -30,7 +30,7 @@ Install the **Active Directory Domain Services (AD DS)** role and promote the se
 
 ### Screenshot
 
-![AD DS Installation](../images/AD%20install.PNG)
+![AD DS Installation](images/AD%20install.PNG)
 
 ---
 
@@ -46,7 +46,7 @@ Create the basic Active Directory structure required for the lab.
 
 ### Screenshot
 
-![OU Structure](../images/Created%20OU,Users,Group.PNG)
+![OU Structure](images/Created%20OU,Users,Group.PNG)
 
 ---
 
@@ -62,7 +62,7 @@ Use PowerShell to automate the creation of Active Directory groups and assign us
 
 ### Screenshot
 
-![PowerShell](../images/create%20group%20and%20add%20users%20to%20group%20using%20powershell.PNG)
+![PowerShell](images/create%20group%20and%20add%20users%20to%20group%20using%20powershell.PNG)
 
 ---
 
@@ -78,7 +78,7 @@ Modify user account settings for better administration.
 
 ### Screenshot
 
-![User Properties](../images/change%20name%20and%20logon%20time.PNG)
+![User Properties](images/change%20name%20and%20logon%20time.PNG)
 
 ---
 
