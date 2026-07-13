@@ -8,9 +8,7 @@ The lab covers Active Directory Domain Services (AD DS), DNS, DHCP, File Sharing
 
 ## Lab Topology
 
-> *(Add your topology diagram here when available.)*
-
-![Lab Topology](images/lan%20segmant.PNG)
+![Lab Topology](images/Digram.PNG)
 
 ---
 
