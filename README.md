@@ -1,3 +1,7 @@
+![Windows Server](https://img.shields.io/badge/Windows_Server-2022-0078D6?style=for-the-badge&logo=windows)
+![Active Directory](https://img.shields.io/badge/Active_Directory-AD_DS-0052CC?style=for-the-badge)
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1-5391FE?style=for-the-badge&logo=powershell)
+![VMware](https://img.shields.io/badge/VMware-Workstation-607078?style=for-the-badge&logo=vmware)
 # Windows Server 2022 Active Directory Home Lab
 
 A hands-on Windows Server 2022 Home Lab that demonstrates the deployment, configuration, and administration of an enterprise Active Directory environment.
