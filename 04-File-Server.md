@@ -100,9 +100,64 @@ Users can only view the folders they are authorized to access.
 
 ---
 
+---
+
+## Step 7 - Deploy Drive Mapping Using Group Policy
+
+To provide users with automatic access to departmental shared folders, a **Group Policy Object (GPO)** was configured to map network drives during user logon.
+
+### Configuration
+
+- Open **Group Policy Management**.
+- Create a new GPO or edit an existing one.
+- Navigate to:
+
+```
+User Configuration
+└── Preferences
+    └── Windows Settings
+        └── Drive Maps
+```
+
+- Create a new **Mapped Drive**.
+- Configure the following settings:
+
+| Setting | Value |
+|---------|-------|
+| Action | Update |
+| Location | `\\SRV1\IT-Shared` |
+| Drive Letter | I: |
+| Label | IT-Map |
+| Reconnect | Enabled |
+
+- Link the GPO to the appropriate Organizational Unit (OU).
+
+### Screenshot
+
+![Drive Mapping GPO](images/share%203%20map.PNG)
+
+---
+
+## Step 8 - Verify Group Policy
+
+Log on as a domain user and verify that the mapped drive is automatically created.
+
+### Verification
+
+- The **I:** drive appears in **File Explorer**.
+- The drive points to the correct shared folder.
+- Users can access files according to their assigned permissions.
+- The drive is recreated automatically after every logon.
+
+### Screenshot
+
+![Mapped Drive](images/share%204%20map%20sucess.PNG)
+
+---
+
 ## Result
 
-The Windows File Server was successfully configured with secure departmental shares.
+The network drive was successfully deployed using **Group Policy Preferences (GPP)**.
 
 ### Features Implemented
 
@@ -112,4 +167,9 @@ The Windows File Server was successfully configured with secure departmental sha
 - ✅ Share Permissions
 - ✅ NTFS Permissions
 - ✅ Access-Based Enumeration (ABE)
-- ✅ Department-Based File Access
+- ✅ Centralized Drive Deployment
+- ✅ Automatic Drive Mapping at Logon
+- ✅ Department-Based Access
+- ✅ Active Directory Integration
+- ✅ Group Policy Preferences (GPP)
+- ✅ Persistent Network Drive
