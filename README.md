@@ -1,8 +1,8 @@
 # Windows Server 2022 Active Directory Home Lab
 
-A hands-on Windows Server 2022 Home Lab that demonstrates the deployment and administration of an enterprise Active Directory environment.
+A hands-on Windows Server 2022 Home Lab that demonstrates the deployment, configuration, and administration of an enterprise Active Directory environment.
 
-The lab covers Active Directory Domain Services (AD DS), DNS, DHCP, File Sharing, Roaming Profiles, Drive Mapping, PowerShell automation, and Windows administration best practices.
+This project covers the installation and management of Active Directory Domain Services (AD DS), DNS, DHCP, File Server, Group Policy, Roaming Profiles, and PowerShell automation using VMware Workstation.
 
 ---
 
@@ -22,8 +22,11 @@ The lab covers Active Directory Domain Services (AD DS), DNS, DHCP, File Sharing
 - DHCP
 - SMB File Sharing
 - NTFS Permissions
+- Access-Based Enumeration (ABE)
+- Group Policy (GPO)
+- Group Policy Preferences (Drive Mapping)
+- Roaming Profiles
 - PowerShell
-- Group Policy
 
 ---
 
@@ -31,25 +34,21 @@ The lab covers Active Directory Domain Services (AD DS), DNS, DHCP, File Sharing
 
 | Module | Description |
 |---------|-------------|
-| **01. Environment Setup** | Deploy Windows Server 2022, install AD DS, create the domain, OUs, users, and groups. |
-| **02. DNS Configuration** | Configure DNS zones, records, and verify name resolution. |
-| **03. DHCP Configuration** | Deploy DHCP, create scopes, and configure client IP assignment. |
-| **04. File Server** | Configure shared folders, NTFS permissions, and Access-Based Enumeration. |
-| **05. Roaming Profiles** | Configure roaming profiles for domain users. |
-| **06. Drive Mapping** | Map shared folders using Active Directory. |
-| **07. Testing & Validation** | Verify DNS, DHCP, domain connectivity, and user access. |
+| **01. Environment Setup** | Create the virtual machine, install AD DS, promote the server to a Domain Controller, and create Organizational Units (OUs), users, and security groups. |
+| **02. DNS Configuration** | Configure DNS zones, create DNS records, and verify name resolution. |
+| **03. DHCP Configuration** | Configure DHCP scopes, exclusions, scope options, and validate automatic IP assignment. |
+| **04. File Server** | Configure storage, shared folders, NTFS permissions, Access-Based Enumeration (ABE), and deploy mapped network drives using Group Policy Preferences (GPP). |
+| **05. Roaming Profiles** | Configure roaming profiles and verify user profile synchronization across domain computers. |
 
 ---
 
 ## Documentation
 
 - 📄 [01 - Environment Setup](01-Environment-Setup.md)
-- 📄 02 - DNS Configuration *(Coming Soon)*
-- 📄 03 - DHCP Configuration *(Coming Soon)*
-- 📄 04 - File Server *(Coming Soon)*
-- 📄 05 - Roaming Profiles *(Coming Soon)*
-- 📄 06 - Drive Mapping *(Coming Soon)*
-- 📄 07 - Testing & Validation *(Coming Soon)*
+- 📄 [02 - DNS Configuration](02-DNS-Configuration.md)
+- 📄 [03 - DHCP Configuration](03-DHCP-Configuration.md)
+- 📄 [04 - File Server](04-File-Server.md)
+- 📄 [05 - Roaming Profiles](05-Roaming-Profiles.md)
 
 ---
 
@@ -59,15 +58,17 @@ The lab covers Active Directory Domain Services (AD DS), DNS, DHCP, File Sharing
 - Windows Server Administration
 - DNS Configuration
 - DHCP Deployment
-- User & Group Management
 - Organizational Unit (OU) Design
+- User & Group Management
 - PowerShell Automation
-- File Server Management
+- File Server Administration
 - NTFS Permissions
-- Access-Based Enumeration
+- SMB File Sharing
+- Access-Based Enumeration (ABE)
+- Group Policy Management
+- Group Policy Preferences (Drive Mapping)
 - Roaming Profiles
-- Drive Mapping
-- Domain Administration
+- Windows Client Domain Join
 
 ---
 
@@ -82,19 +83,33 @@ WIN-SRV-Homelab
 ├── 03-DHCP-Configuration.md
 ├── 04-File-Server.md
 ├── 05-Roaming-Profiles.md
-├── 06-Drive-Mapping.md
-├── 07-Testing.md
 └── images/
 ```
 
 ---
 
+## Features
+
+- Enterprise Active Directory Deployment
+- DNS & DHCP Services
+- Department-Based Organizational Units
+- User & Security Group Management
+- PowerShell Automation
+- Secure SMB File Sharing
+- NTFS Permissions
+- Access-Based Enumeration (ABE)
+- Drive Mapping using Group Policy Preferences (GPP)
+- Roaming User Profiles
+- Windows 11 Domain Integration
+
+---
 
 ## Author
 
 **Mazen Medhat**
 
 - IT Student
+- System Administration & Networking Enthusiast
 - Cybersecurity Enthusiast
 
 If you found this project useful, feel free to ⭐ star the repository.
